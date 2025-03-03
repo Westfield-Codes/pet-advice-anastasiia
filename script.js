@@ -35,3 +35,21 @@ function petRodent(){
     let wall = document.getElementById("wall");
     wall.style.backgroundImage = "url('"+bgImg+"')";
   }
+
+  function petNastia (){
+    let pet = "";
+    let noisy = confirm("Do you wanna a noisy pet? (OK = yes)");
+    if (noisy = true) {
+      let big = confirm("Do you wanna a big animal? (OK = yes)");
+      if (big == true) {
+        pet = "dog";
+      }
+      else {
+        pet = "turtle";
+      }
+    }
+    else {
+      pet = "chicken";
+    }
+    alert("Try a " + pet);
+  }
